@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fuente adicional */
+
+@keyframes backgroundColorChange {
+    from { background-color: #ecb0ff; }
+    to { background-color: #ff92d0; }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    animation: backgroundColorChange 5s infinite alternate;
+}
+
+.menu{
+    padding-top: 10px;
+}
+.lista-menu{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.item-menu{
+    display: inline;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-menu:hover {
+    background-color: #00abf0;
+    color: #fff;
+    box-shadow: 5px 5px 5px #747474;
+}
+
+.section{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px 150px;
+}
+.section-a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-item{
+    justify-content: space-between;
+    margin: 20px 20px;
+    border-radius: 10px;
+    border:10px solid #f0f0f0;
+    background-color: #f0f0f0;
+    width: 227px;
+    box-shadow: 5px 5px 5px #747474;
+}
+
+.img-div{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.nombre{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0px 10px 10px;
+}   
+.precio{
+    margin-top: 5px;
+    color: #555;
+    margin: 10px 0px 10px 10px;
+}
+.hideinfo{
+    display: none;
+}
+.show{
+    display:block;
+    width: 227px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    font-size: 20px;
+}
+.boton{
+    display: flex;
+    margin: 0px 50px;
+    background-color: #7066E0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton:hover {
+    background-color: #514aa1;
+    transform: scale(1.05);
+}
+
+.boton:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fuente adicional */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    animation: backgroundColorChange 5s infinite alternate;
+}
+
+@keyframes backgroundColorChange {
+    from { background-color: #ecb0ff; }
+    to { background-color: #ff92d0; }
+}
+
+.menu {
+    position: center;
+    padding-top: 10px;
+}
+
+.lista-menu{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.item-menu{
+    display: inline;
+    
+}
+
+.link-lista{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-lista:hover{
+    background-color: #00abf0;
+    color: #fff;
+    box-shadow: 5px 5px 5px #747474;
+}
+.m1{
+    margin-top: 150px;
+    background-color: #d8d8d8;
+    border: 5px solid #333;
+    border-radius: 5px;
+}
+.title{
+    padding-top: 20px;
+    text-align: center;
+}
+.s1{
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+}
+
+.about-us{
+    padding: 20px;
+}
+.parrafo{
+    margin: 10px 0;
+    color: #333;
+}

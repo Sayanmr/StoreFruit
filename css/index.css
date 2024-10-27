@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fuente adicional */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita el desplazamiento */
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Envía el video al fondo */
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.boton-h1 {
+  position: relative; /* Asegura que el botón esté por encima del video */
+  color: transparent;         /* Hacer el texto transparente */
+  background: url('ruta-de-tu-textura.jpg') repeat; /* Ruta de la imagen de textura */
+  -webkit-background-clip: text; /* Aplicar la textura al texto en Safari */
+  background-clip: text;      /* Aplicar la textura al texto en otros navegadores */
+  text-align: center;         /* Centra el texto */
+  padding: 20px 60px;         /* Ajusta el relleno para agrandar el botón */
+  font-size: 24px;            /* Ajusta el tamaño de la fuente */
+  font-family: 'Lobster', cursive; /* Cambiar la fuente del texto */
+  background-color: #ff0101;     /* Color de fondo del botón */
+  border: 4px solid #e81d19;  /* Borde del botón */
+  border-radius: 8px;         /* Bordes redondeados */
+  cursor: pointer;            /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  text-decoration: none;      /* Quita el subrayado */
+  display: inline-block;
+}
+
+.boton-h1:hover {
+  background-color: #4ee070; /* Cambio de fondo al pasar el ratón */
+  color: #ffffff;               /* Cambio de color de texto al pasar el ratón */
+}
+
+@keyframes backgroundColorChange {
+  from { background-color: #007111; }
+  to { background-color: #69cd68; }
+}
